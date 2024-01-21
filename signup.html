@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: ' Poppins', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 740px;
+            background-image: url(https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074076.jpg);
+            background-repeat: no-repeat;
+
+            background-size: 1740px 980px;
+            background-position: center;
+            position: relative;
+        }
+
+        .form-box {
+            width: 90%;
+            max-width: 465px;
+            position: absolute;
+            border-radius: 4px;
+            top: 50%;
+            left: 27%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 40px 59px 40px;
+            text-align: center;
+            box-shadow: 2px 6px 15px 2px rgb(68 35 2);
+
+        }
+
+        .form-box h1 {
+            font-size: 32px;
+            margin-bottom: 61px;
+            color: #a6a301;
+            position: relative;
+        }
+
+        .form-box h1::after {
+            content: '';
+            width: 41px;
+            height: 4px;
+            border-radius: 3px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .input-field {
+            background: #c6c6c6;
+            margin: 15px 0;
+            border-radius: 38px;
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 18px 15px;
+        }
+
+        .input-field i {
+            margin-left: 15px;
+            color: #0e0d0d;
+        }
+
+        form p {
+            text-align: left;
+            margin-left: 2px;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        form p a {
+            text-decoration: none;
+            margin-left: 110px;
+            color: rgb(3, 3, 212);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #cbx {
+
+            width: 47px;
+            margin-left: -39px;
+        }
+
+        label {
+            margin-left: -13px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .btn-field {
+            width: 100%;
+            margin-left: 25%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-field :hover {
+            color: #a6a301;
+            background-color: #161301;
+            transition-duration: 1s;
+        }
+
+        .btn-field button {
+            flex-basis: 53%;
+            margin-top: 8px;
+            margin-left: -177px;
+            margin-bottom: 6px;
+            background: #9e8f02e0;
+            height: 41px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        form label a {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        form p1 {
+            font-family: 'Times New Roman', Times, serif;
+            margin: top 2px;
+            ;
+        }
+
+        form h6 {
+            font-family: ' Poppins', sans-serif;
+            font-size: 14px;
+            margin-bottom: -15px;
+            font-weight: 500;
+        }
+
+        form h5 {
+            font-family: ' Poppins', sans-serif;
+            font-size: 14px;
+            margin-bottom: -15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name...">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email number" placeholder="Email or Phone no." id="email">
+                       
+                    </div>
+                    <h6>Create password</h6>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" id="passsword">
+
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password...">
+                    </div>
+                    <h5>Date of Birth</h5>
+                    <div class="input-field">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <input type="date" placeholder="Date of birth">
+                    </div>
+
+                    <input id="cbx" type="checkbox">
+                    <label for="cbx">By clicking on Sign Up ,you have agree to our <a href="#">Terms</a> and how we use
+                        cookies and similar technology in <a href="#">Privacy policy</a></label>
+                    <div class="btn-field">
+                        <button type="button">Signup</button>
+                    </div>
+                    <p1>Already have an account?<a href="login.html">Login</a></p1>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

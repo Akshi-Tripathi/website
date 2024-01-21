@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: ' Poppins', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 800px;
+            background-image: url(girly.jpg);
+            background-repeat: no-repeat;
+
+            background-size: 1740px 980px;
+            background-position: center;
+            position: relative;
+        }
+
+        .form-box {
+            width: 90%;
+            max-width: 465px;
+            position: absolute;
+            border-radius: 4px;
+            top: 50%;
+            left: 27%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 40px 59px 40px;
+            text-align: center;
+            box-shadow: 2px 6px 15px 2px rgb(68 35 2);
+
+        }
+
+        .form-box h1 {
+            font-size: 32px;
+            margin-bottom: 61px;
+            color: #a6a301;
+            position: relative;
+        }
+
+        .form-box h1::after {
+            content: '';
+            width: 31px;
+            height: 5px;
+            border-radius: 3px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .input-field {
+            background: #c6c6c6;
+            margin: 15px 0;
+            border-radius: 38px;
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 18px 15px;
+        }
+
+        .input-field i {
+            margin-left: 15px;
+            color: #0e0d0d;
+        }
+
+        form p {
+            text-align: left;
+            margin-left: 2px;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        form p a {
+            text-decoration: none;
+            margin-left: 110px;
+            color: rgb(3, 3, 212);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+
+
+
+        .btn-field {
+            width: 100%;
+            margin-left: 25%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .twitter {
+            width: 100%;
+            margin-left: 32%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .Google {
+            width: 100%;
+            margin-left: 32%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .Google button {
+            flex-basis: 62%;
+            margin-top: 12px;
+            margin-left: -177px;
+            margin-bottom: 9px;
+            background: #ffffffe0;
+            height: 41px;
+            border-radius: 20px;
+            border: 1;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        .twitter button {
+            flex-basis: 58%;
+            margin-top: 12px;
+            margin-left: -177px;
+            margin-bottom: 9px;
+            background: #feffffe0;
+            height: 41px;
+            border-radius: 20px;
+            border: 1;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        .btn-field button {
+            flex-basis: 58%;
+            margin-top: 12px;
+            margin-left: -177px;
+            margin-bottom: 9px;
+            background: #9e8f02e0;
+            height: 41px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        .btn-field :hover {
+            color: #a6a301;
+            background-color: #161301;
+            transition-duration: 1s;
+        }
+
+        form p1 {
+            font-family: 'Times New Roman', Times, serif;
+            margin: top 2px;
+
+        }
+
+        form p1 a {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        img {
+    width: 50px;
+    height: 40px;
+    margin-top: 13px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Login</h1>
+            <form>
+                <div class="input-group">
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email number" placeholder="Email or Phone no." id="email">
+                    </div>
+
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" id="passsword">
+
+                    </div>
+                    <p><a href="#">Forgot passsword?</a></p>
+                    <div class="btn-field">
+                        <button type="button">Login</button>
+                    </div>
+                    <p1>Don't have a account?<a href="signup.html">Sign up</a></p1>
+                </div>
+                <br>
+                <hr><br>
+                <div class="twitter">
+                    <button><a href="https://twitter.com/i/flow/login"
+                            style=" color: black; text-decoration: none;">Login with twitter</a></button><img src="C:\Users\manib\Downloads\twitter.png" alt="">
+                </div>
+                <div class="Google">
+                    <button><a
+                            href="https://accounts.google.com/v3/signin/identifier?dsh=S755207497%3A1684736164381641&ifkv=Af_xneEpHV73N-uonCdwtkk0clS3W3sHTMmVGhzBpeLQXgIdVO6SUkHmk2-M0ohpMOeVJQjiXn9q0w&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                            style=" color: black; text-decoration: none;">Login with Google</a></button><img src="C:\Users\manib\Downloads\google.jpg" alt="">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
